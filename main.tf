@@ -1,12 +1,12 @@
 provider "aws" {
 region = var.aws_region
-access_key = "AKIAXV4I4PUJ4SKF4LIT"
-secret_key = "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"
+access_key = "AKIA5BWOMLR5EPH7RCXG"
+secret_key = "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"
 endpoints {
 sts = "https://sts.ap-south-1.amazonaws.com"
 }
 assume_role {
-role_arn = "arn:aws:iam::528031186195:role/terraform"
+role_arn = "arn:aws:iam::897007246458:role/TerraformRole"
 session_name = "terraform_session_name"
 }
 }
