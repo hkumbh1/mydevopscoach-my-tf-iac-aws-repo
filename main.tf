@@ -1,6 +1,5 @@
 provider "aws" {
 region = var.aws_region
-iam_instance_profile = "${aws_iam_instance_profile.ec2_profile.name}"
  
 }
 
@@ -41,6 +40,7 @@ resource "aws_instance" "myFirstInstance" {
   ami           = var.ami_id
   instance_type = var.instance_type
   security_groups= [var.security_group]
+ iam_instance_profile = "${aws_iam_instance_profile.ec2_profile.name}"
   tags= {
     Name = var.tag_name
   }
