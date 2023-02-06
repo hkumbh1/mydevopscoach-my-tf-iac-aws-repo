@@ -14,6 +14,6 @@ resource "aws_iam_role" "Terrafrom_role" {
 }
 
 resource "aws_iam_instance_profile" "ec2_profile" {
-  name = "iam_ec2_profile"
+  name = "Terraform_ec2_profile"
   role = "${aws_iam_role.Terraform_role.name}"
 }
