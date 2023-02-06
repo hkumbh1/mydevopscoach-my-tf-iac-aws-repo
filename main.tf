@@ -1,6 +1,7 @@
 provider "aws" {
 region = var.aws_region
-
+iam_instance_profile = "${aws_iam_instance_profile.ec2_profile.name}"
+ 
 }
 
 #Create security group with firewall rules
