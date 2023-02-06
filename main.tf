@@ -1,8 +1,6 @@
 provider "aws" {
 region = var.aws_region
-endpoints {
-sts = "https://sts.ap-south-1.amazonaws.com"
-}
+
 }
 
 #Create security group with firewall rules
