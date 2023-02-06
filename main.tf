@@ -3,10 +3,6 @@ region = var.aws_region
 endpoints {
 sts = "https://sts.ap-south-1.amazonaws.com"
 }
-assume_role {
-role_arn = "arn:aws:iam::897007246458:role/Terraform1"
-session_name = "terraform_session_name"
-}
 }
 
 #Create security group with firewall rules
